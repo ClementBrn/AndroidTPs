@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidTP1</string>
+    <string name="pain_au_chocolat">Pain au chocolat</string>
+    <string name="une_description_de_pain_au_chocolat">Une description de pain au chocolat</string>
+    <string name="acheter">Acheter</string>
+    <string name="buyed">Acheté</string>
+    <integer name="rating">4</integer>
+</resources>
