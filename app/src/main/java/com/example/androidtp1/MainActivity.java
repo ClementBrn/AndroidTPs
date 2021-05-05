@@ -2,6 +2,7 @@ package com.example.androidtp1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -38,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickUrl(View view){
         Toast.makeText(this, article.getUrl(), Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(this, InfoURLActivity.class);
+        intent.putExtra("article", article);
+        startActivity(intent);
     }
 
     public void onClickBuy(View view){

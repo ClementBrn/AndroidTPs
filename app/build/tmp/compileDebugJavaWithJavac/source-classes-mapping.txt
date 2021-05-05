@@ -1,4 +1,9 @@
+com/example/androidtp1/InfoURLActivity.java
+ com.example.androidtp1.InfoURLActivity
 com/example/androidtp1/MainActivity.java
  com.example.androidtp1.MainActivity
+com/example/androidtp1/Article.java
+ com.example.androidtp1.Article
+ com.example.androidtp1.Article$1
 com/example/androidtp1/BuildConfig.java
  com.example.androidtp1.BuildConfig

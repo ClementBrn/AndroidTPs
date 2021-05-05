@@ -80,6 +80,10 @@
         "source": "C:\\Users\\cleme\\Documents\\Cours\\AndroidTP1\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\cleme\\Documents\\Cours\\AndroidTP1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_info_url.xml.flat",
+        "source": "C:\\Users\\cleme\\Documents\\Cours\\AndroidTP1\\app\\src\\main\\res\\layout\\activity_info_url.xml"
+    },
+    {
         "merged": "C:\\Users\\cleme\\Documents\\Cours\\AndroidTP1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\cleme\\Documents\\Cours\\AndroidTP1\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },

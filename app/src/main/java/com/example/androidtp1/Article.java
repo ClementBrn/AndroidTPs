@@ -1,6 +1,9 @@
 package com.example.androidtp1;
 
-public class Article
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Article implements Parcelable
 {
     private int id;
     private String name;
@@ -24,6 +27,28 @@ public class Article
         this.rating = rating;
         this.isBuyed = isBuyed;
     }
+
+    protected Article(Parcel in) {
+        id = in.readInt();
+        name = in.readString();
+        description = in.readString();
+        url = in.readString();
+        price = in.readFloat();
+        rating = in.readFloat();
+        isBuyed = in.readByte() != 0;
+    }
+
+    public static final Creator<Article> CREATOR = new Creator<Article>() {
+        @Override
+        public Article createFromParcel(Parcel in) {
+            return new Article(in);
+        }
+
+        @Override
+        public Article[] newArray(int size) {
+            return new Article[size];
+        }
+    };
 
     public int getId() {
         return id;
@@ -92,5 +117,21 @@ public class Article
                 ", note=" + rating +
                 ", achat=" + isBuyed +
                 '}';
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeInt(id);
+        parcel.writeString(name);
+        parcel.writeString(description);
+        parcel.writeString(url);
+        parcel.writeFloat(price);
+        parcel.writeFloat(rating);
+        parcel.writeByte((byte) (isBuyed ? 1 : 0));
     }
 }
